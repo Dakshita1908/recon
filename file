@@ -1,0 +1,7 @@
+import os
+def recon(ip):
+    os.system(f"nmap -A -p- -Pn{ip}")
+    os.system(f"gobuster -m dns -u $TARGET.com -t 100 -w all.txt")
+    os.system(
+
+recon(input("what is your ip")
